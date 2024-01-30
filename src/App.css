@@ -1,0 +1,167 @@
+@font-face {
+    font-family: "Segoe UI";
+    src: url("font/SegoeUI.ttf");
+}
+* {
+    font-family: "Segoe UI";
+    font-size: 98%;
+    /* user-select: all;
+    pointer-events: none; */
+}
+p {
+    color: rgb(113 113 122/1);
+}
+.App {
+    text-align: center;
+}
+.blue {
+    background-color: #1967d3;
+}
+.secondBlue {
+    background-color: #e3eafa;
+}
+.bg-gray {
+    background-color: rgb(245 245 245/1);
+}
+.text-gray {
+    color: rgb(163 163 163 / 1);
+}
+.FulltimeAndPrivateContainer{
+    display: flex;
+    flex-direction: row;
+}
+@media screen and (max-width : 1192px){
+    #Menu{
+        display: flex;
+    }
+    #Menu ~ div{
+        display: none;
+    }
+    #menuToDisplay{
+        left: 149px;
+    }
+}
+@media screen and (max-width : 1064px){
+    .JobCathegories{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width : 989px){
+    .ArticlesContainer{
+        justify-content: center;
+    }
+    .Jobcontainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .Main{
+        padding: 0px 8%;
+    }
+}
+@media screen and (max-width : 785px){
+    .PresentationImageContainer > div{
+        left: 30px;
+    }
+    .PresentationChiffresContainer{
+        flex-direction: column;
+    }
+    .FindBar{
+        flex-direction: column;
+        height: auto;
+        gap: 1rem;
+        width: 100%;
+    }
+    .FindBar .w-\[1px\]{
+        display: none;
+    }
+    .MainTitle{
+        width: auto;
+    }
+    .MainTitle > h1{
+        width: auto;
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .MenuSuplementaire{
+        display: none;
+    }
+    #Menu{
+        display: none;
+    }
+    #SVGHeaderContainer{
+        display: flex;
+    }
+    #menuToDisplay{
+        left: 0px;
+        padding-left: 25px;
+        width: 100vw;
+        box-shadow: 0px 6px 6px 1px rgba(0, 0, 0, 0.1);
+    }
+    .ButtonSmallScreen{
+        display: flex;
+    }
+}
+@media screen and (max-width : 687px){
+    .JobCathegories{
+        grid-template-columns: minmax(0px, 330px);
+        justify-items: center;
+    }
+    .JobCathegories > div{
+        width: calc(100% - 20px);
+    }
+    .Cathegorie{
+        width: calc(100vw - 20px);
+    }
+}
+@media screen and (max-width : 480px){
+    .PresentationImageContainer{
+        width: calc(100vw - 20px);
+        height: calc(100vw - 20px);
+    }
+    .PresentationTextContainer{
+        width: calc(100vw - 20px);
+        margin: 1rem;
+        padding: 0px;
+    }
+    .Jobcontainer{
+        width: calc(100vw - 20px);
+    }
+    .Jobcontainer > div{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .ImageJobContainer{
+        width: 25vw;
+        height: 25vw;
+        margin: 0px auto;
+        border-radius: 50%;
+        margin-bottom: 2rem;
+    }
+    .FulltimeAndPrivateContainer{
+        position: absolute;
+        top: 1rem;
+        left: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .FullTimeJob, .PrivateJob{
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    .UrgentJob{
+        position: absolute;
+        right: 0px;
+        top: 1rem;
+    }
+    .Jobtitle{
+        text-align: center;
+    }
+    .Infos1{
+        justify-content: center;
+    }
+    .Card{
+        margin: 10px;
+    }
+}
